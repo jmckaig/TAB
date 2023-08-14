@@ -1,0 +1,44 @@
+Session: ClassificationLearner,,,,,,,
+Training Data: t_nl_SNR    Observations: 22791,,,,,,,
+"Predictors: 7    Predictor Names: dwell_sec, SNR, mean_amp_pA, max_amp_pA, med_amp_pA, std_amp_pA, area_pA_sec",,,,,,,
+"Response Name: sample_name    Response Classes: 6    Response Class Names: DNA1kb, DNAhr, dsRNA, pUC19, ribosome, ssRNA",,,,,,,
+Validation: Holdout validation with 25% held out,,,,,,,
+Test Data: t_nl_SNR    Observations: 2532,,,,,,,
+,,,,,,,
+,,,,,,,
+Favorite,Model Number,Model Type,Status,Accuracy % (Validation),Total Cost (Validation),Accuracy % (Test),Total Cost (Test)
+0,3.28,Neural Network,Tested,96.14480489,246,95.85308057,105
+0,3.29,Neural Network,Tested,95.97241812,257,96.09004739,99
+0,3.23,Ensemble,Tested,95.59630152,281,95.26066351,120
+0,3.27,Neural Network,Tested,95.53361542,285,95.30015798,119
+0,3.31,Neural Network,Tested,95.42391475,292,95.65560821,110
+0,3.21,KNN,Tested,95.06346968,315,95.41864139,116
+0,3.13,SVM,Tested,95.03212663,317,95.10268562,124
+0,3.3,Neural Network,Tested,95.00078358,319,95.69510269,109
+0,1,Tree,Tested,94.93809748,323,94.78672986,132
+0,3.1,Tree,Tested,94.93809748,323,94.78672986,132
+0,3.17,KNN,Tested,94.93809748,323,95.06319115,125
+0,3.2,KNN,Tested,94.90675443,325,95.18167457,122
+0,3.14,SVM,Tested,94.87541138,327,95.10268562,124
+0,3.19,KNN,Tested,94.79705375,332,95.5371248,113
+0,3.1,SVM,Tested,94.78138223,333,94.54976303,138
+0,3.22,Ensemble,Tested,94.56198088,347,93.72037915,159
+0,3.16,KNN,Tested,94.40526563,357,95.02369668,126
+0,3.26,Ensemble,Tested,94.13884971,374,93.60189573,162
+0,3.18,KNN,Tested,93.98213446,384,94.23380727,146
+0,2,Tree,Tested,92.88512772,454,92.33807267,194
+0,3.2,Tree,Tested,92.88512772,454,92.33807267,194
+0,3.25,Ensemble,Tested,92.77542705,461,93.12796209,174
+0,3.32,Kernel,Tested,92.39931045,485,92.41706161,192
+0,3.7,Efficient Linear SVM,Tested,92.22692368,496,92.49605055,190
+0,3.15,SVM,Tested,92.02319386,509,93.60189573,162
+0,3.9,Naive Bayes,Tested,91.38066134,550,90.36334913,244
+0,3.33,Kernel,Tested,90.94185864,578,92.21958926,197
+0,3.5,Discriminant,Tested,90.45604137,609,90.24486572,247
+0,3.3,Tree,Tested,79.10985739,1333,81.24012638,475
+0,3.4,Discriminant,Tested,78.67105469,1361,78.94944708,533
+0,3.8,Naive Bayes,Tested,70.69424855,1870,70.02369668,759
+0,3.24,Ensemble,Tested,68.92336624,1983,68.68088468,793
+0,3.6,Efficient Logistic Regression,Tested,66.77636734,2120,66.94312796,837
+0,3.11,SVM,Tested,95.75301677,271,95.57661927,112
+0,3.12,SVM,Tested,77.24494593,1452,61.37440758,978
