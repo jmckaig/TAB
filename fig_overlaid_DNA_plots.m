@@ -1,4 +1,4 @@
-% fig2_overlaid_DNA_plots.m
+% fig6_overlaid_DNA_plots.m
 % Plot conductance vs. dwell time for different DNA events and buffers 
 
 %% Plot DNA samples
