@@ -1,5 +1,5 @@
-% fig6_overlaid_event_plot.m
-% Plot conductance vs. dwell time for different DNA events and buffers 
+% fig2_overlaid_event_plot.m
+% Plot conductance vs. dwell time for different biomolecule events
 
 clear all; close all; clc;
 recordings = './data';
