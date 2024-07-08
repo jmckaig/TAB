@@ -1,5 +1,4 @@
-%% supplemental_baseline_noise.m
-% Plot baselines and measure noise for all samples
+%% figS1_raw_adjusted_currents_10sec.m
 clear all; close all; clc;
 
 data = './data';
@@ -50,23 +49,30 @@ for k=1:numel(fn)
     % Plot raw data with overlaid events
     nanocounter_plot_raw_data_and_events(Mat,EventsMat);
     plot(t,baseline_msba,'k','LineWidth', 2);
+    %title(id,'Raw Data');
     title('Raw Data');
     set(gca,'fontname','Helvetica','fontsize',20);
     
     % Remove outliers (signal) to be left with baseline and characterize as
     % Gaussian to get mean and standard deviation (noise)
     pd = fitdist(rmoutliers(msba),'normal');
-    disp(['Sample: ' num2str(id)]);
-    fprintf('Baseline (mean, pA): %0.2f\n',pd.mu);
-    fprintf('Noise (standard deviation, pA): %0.2f\n',pd.sigma);
-    fprintf('\n');
     baseline = pd.mu;
 
     % Plot baseline-adjusted data with overlaid events
     nanocounter_plot_adj_data_and_events(Mat,EventsMat,msba,baseline);
     xlabel('Time (s)');
     ylabel('Current (pA)');
+    %title(id,'Baseline-Adjusted Data');
     title('Baseline-Adjusted Data');
     set(gca,'fontname','Helvetica','fontsize',20);
+
+    % Plot baseline-adjusted data without overlaid events for 70-80 seconds
+    nanocounter_plot_adj_data(Mat,EventsMat,msba,baseline);
+    xlabel('Time (s)');
+    ylabel('Current (pA)');
+    %title(id,'Baseline-Adjusted Data');
+    title('Baseline-Adjusted Data');
+    set(gca,'fontname','Helvetica','fontsize',20);
+    xlim([70 80]);
     
 end
