@@ -1,7 +1,7 @@
 # TAB
 **Instructions for Replicating TAB Analysis**
 
-Jordan M. McKaig, MinGyu Kim, Christopher E. Carr. Translation as a Biosignature. Preprint: bioRxiv (submitted 2023-08-10). Intended for submission to Astrobiology. Updated 2024-02-14.
+Jordan M. McKaig, MinGyu Kim, Christopher E. Carr. Translation as a Biosignature. Preprint: bioRxiv (submitted 2023-08-10). Intended for submission to Astrobiology. Updated 2024-07-08.
 
 1. Download repository files from https://osf.io/56qkv/. Save in a folder titled "data". 
 
@@ -39,10 +39,16 @@ Jordan M. McKaig, MinGyu Kim, Christopher E. Carr. Translation as a Biosignature
 
 18. Generate plots of raw and baseline-adjusted runtime data with overlaid extracted events for all biomolecule and buffer samples from Figure S1 by running *figS1_raw_adjusted_currents.m*.
 
-19. Navigate into the machine_learning folder.
+19. Generate plots of current, nanopore diameter, and noise data for entire recording time of each pore from Figure S2 by running *figS2_current_diameter_noise_DNA.m* and *figS2_current_diameter_noise_RNA_ribosomes.m*.
 
-20. Open the MATLAB Classification Learner app. Within this session, open *ClassificationLearner.mat*. This session was generated with input event data formatted with *get_event_table_unlabeled.m*. View machine learning models and results, including the confusion matrix from Figure 7 (output from the Medium Tree model).
+20. Generate heat maps for each nanopore's measurement of the DNA 1kb ladder from Figure S3 by running *figS3_nanopore_replicates.m*.
 
-21. Open *trees.mat*. Generate Medium Tree decision points from Figure S2 by running *viewtree.m*.
+21. Generate power spectral density plots from Figure S5 by running *figS5_PSD.m*.
+
+22. Navigate into the machine_learning folder.
+
+23. Open the MATLAB Classification Learner app. Within this session, open *ClassificationLearner.mat*. This session was generated with input event data formatted with *get_event_table_unlabeled.m*. View machine learning models and results, including the confusion matrix from Figure 7 (output from the Medium Tree model).
+
+24. Open *trees.mat*. Generate Medium Tree decision points from Figure S2 by running *viewtree.m*.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
